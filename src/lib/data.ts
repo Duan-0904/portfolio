@@ -20,7 +20,7 @@ export const navbarData = {
 
 export const footerData = {
   email: "15750249059@163.com",
-  github: "github.com/duantao-0904",
+  github: "github.com/Duan-0904",
   copyright: "© 2026 段韬",
 };
 
