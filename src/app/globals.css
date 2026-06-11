@@ -23,7 +23,8 @@ body {
 a {
   color: var(--color-text);
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
   transition: color 150ms ease;
 }
 
@@ -31,9 +32,31 @@ a:hover {
   color: var(--color-text-secondary);
 }
 
-/* 原生 details 无额外动效 */
+/* 原生 details 样式增强 */
 details summary {
   cursor: pointer;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* details 展开/收起提示文字 */
+details summary::after {
+  content: " ▾";
+  font-size: 0.85em;
+  color: var(--color-text-tertiary);
+}
+
+details[open] summary::after {
+  content: " ▴";
+}
+
+/* 图片通用样式 */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* 移除默认 focus 样式，换成更轻的 */

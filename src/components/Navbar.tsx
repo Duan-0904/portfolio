@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { navbarData } from "@/lib/data";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [activeId, setActiveId] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +15,40 @@ export default function Navbar() {
     handleScroll(); // 初始检查
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Intersection Observer：检测当前可见的项目区块
+  useEffect(() => {
+    const ids = navbarData.links.map((l) => l.id);
+    const elements = ids.map((id) => document.getElementById(id)).filter(Boolean) as HTMLElement[];
+
+    if (elements.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // 找到当前最接近视口顶部的可见区块
+        let closest: { id: string; top: number } | null = null;
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const top = entry.boundingClientRect.top;
+            if (!closest || top < closest.top) {
+              closest = { id: entry.target.id, top };
+            }
+          }
+        }
+        if (closest) {
+          setActiveId(closest.id);
+        }
+      },
+      {
+        // 当区块顶部进入视口上半部分时触发
+        rootMargin: "-20% 0px -60% 0px",
+        threshold: 0,
+      }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
   }, []);
 
   const scrollTo = (id: string) => {
@@ -42,15 +77,22 @@ export default function Navbar() {
 
         {/* 导航链接 */}
         <div className="flex gap-6">
-          {navbarData.links.map((link) => (
-            <button
-              key={link.id}
-              onClick={() => scrollTo(link.id)}
-              className="text-[14px] text-text-secondary hover:text-text transition-colors duration-150"
-            >
-              {link.label}
-            </button>
-          ))}
+          {navbarData.links.map((link) => {
+            const isActive = activeId === link.id;
+            return (
+              <button
+                key={link.id}
+                onClick={() => scrollTo(link.id)}
+                className={`text-[14px] transition-colors duration-150 ${
+                  isActive
+                    ? "text-text"
+                    : "text-text-secondary hover:text-text"
+                }`}
+              >
+                {link.label}
+              </button>
+            );
+          })}
         </div>
       </div>
     </nav>

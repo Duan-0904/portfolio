@@ -22,7 +22,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           <img
             src={project.image}
             alt={project.imageAlt}
-            className="w-full rounded-sm border border-[#e5e5e5]"
+            className="w-full rounded-sm border border-[#e5e5e5] bg-[#f0f0f0]"
             loading="lazy"
           />
         </div>
@@ -44,12 +44,14 @@ export default function ProjectCard({ project }: { project: Project }) {
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {project.keyDataImages.map((img) => (
               <figure key={img.src}>
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full rounded-sm border border-[#e5e5e5]"
-                  loading="lazy"
-                />
+                <div className="overflow-hidden rounded-sm border border-[#e5e5e5] bg-[#f0f0f0]">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
                 <figcaption className="mt-2 text-[13px] text-text-tertiary leading-relaxed">
                   {img.caption}
                 </figcaption>
@@ -58,12 +60,21 @@ export default function ProjectCard({ project }: { project: Project }) {
           </div>
         )}
 
-        {/* PDF 下载链接（后续产出后启用） */}
-        {/* <p className="mt-10">
-          <a href={project.id === "zhongxiaorongmei" ? "/pdf/中小融媒内容运营体系.pdf" : "/pdf/简程AI.pdf"} className="text-[17px]">
+        {/* PDF 下载链接 */}
+        <p className="mt-10">
+          <a
+            href={
+              project.id === "zhongxiaorongmei"
+                ? "/pdf/中小融媒内容运营体系.pdf"
+                : "/pdf/简程AI.pdf"
+            }
+            className="inline-flex items-center gap-1 text-[15px] text-text-secondary hover:text-text transition-colors duration-150"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             查看完整文档（PDF）→
           </a>
-        </p> */}
+        </p>
       </div>
 
       {/* ========== 折叠详情 ========== */}
