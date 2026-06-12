@@ -18,156 +18,97 @@
   }
 
   /* 封面 */
-  .cover {
-    text-align: center;
-    padding: 120px 0 80px;
-    page-break-after: always;
-  }
-  .cover h1 {
-    font-size: 24pt;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 24px;
-  }
-  .cover .meta {
-    font-size: 10pt;
-    color: #666;
-    line-height: 2;
-  }
+  .cover { text-align: center; padding: 120px 0 80px; page-break-after: always; }
+  .cover h1 { font-size: 24pt; font-weight: 700; line-height: 1.3; margin-bottom: 24px; }
+  .cover .meta { font-size: 10pt; color: #666; line-height: 2; }
 
-  h1 {
-    font-size: 18pt;
-    font-weight: 700;
-    margin: 48px 0 16px;
-    line-height: 1.3;
-    page-break-after: avoid;
-  }
-  h2 {
-    font-size: 14pt;
-    font-weight: 600;
-    margin: 36px 0 12px;
-    line-height: 1.4;
-    page-break-after: avoid;
-  }
-  h3 {
-    font-size: 12pt;
-    font-weight: 600;
-    margin: 28px 0 10px;
-    line-height: 1.4;
-    page-break-after: avoid;
-  }
+  h1 { font-size: 18pt; font-weight: 700; margin: 48px 0 16px; line-height: 1.3; page-break-after: avoid; }
+  h2 { font-size: 14pt; font-weight: 600; margin: 36px 0 12px; line-height: 1.4; page-break-after: avoid; }
+  h3 { font-size: 12pt; font-weight: 600; margin: 28px 0 10px; line-height: 1.4; page-break-after: avoid; }
 
-  p {
-    margin: 8px 0;
-    text-align: justify;
-  }
-
-  ul {
-    margin: 8px 0 8px 1.5em;
-  }
-  li {
-    margin: 4px 0;
-  }
+  p { margin: 8px 0; text-align: justify; }
+  ul, ol { margin: 8px 0 8px 1.5em; }
+  li { margin: 4px 0; }
   strong { font-weight: 600; }
 
-  hr {
-    border: none;
-    border-top: 1px solid #e5e5e5;
-    margin: 36px 0;
-  }
+  hr { border: none; border-top: 1px solid #e5e5e5; margin: 36px 0; }
 
   /* ========== HTML 表格 ========== */
   .data-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 16px 0;
-    font-size: 9pt;
-    page-break-inside: avoid;
+    width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 9pt; page-break-inside: avoid;
   }
-  .data-table th,
-  .data-table td {
-    border: 1px solid #d0d0d0;
-    padding: 7px 10px;
-    text-align: left;
-    vertical-align: top;
-    line-height: 1.5;
+  .data-table th, .data-table td {
+    border: 1px solid #d0d0d0; padding: 7px 10px; text-align: left; vertical-align: top; line-height: 1.5;
   }
-  .data-table th {
-    background: #f5f5f5;
-    font-weight: 600;
-    font-size: 9pt;
-  }
-  .data-table td {
-    font-size: 9pt;
-  }
-  .data-table tr:nth-child(even) td {
-    background: #fafafa;
-  }
+  .data-table th { background: #f5f5f5; font-weight: 600; font-size: 9pt; }
+  .data-table td { font-size: 9pt; }
+  .data-table tr:nth-child(even) td { background: #fafafa; }
 
   /* ========== 信息卡片 ========== */
   .info-card {
-    border: 1px solid #d0d0d0;
-    border-left: 3px solid #333;
-    padding: 14px 18px;
-    margin: 16px 0;
-    background: #fafafa;
-    page-break-inside: avoid;
+    border: 1px solid #d0d0d0; border-left: 3px solid #333; padding: 14px 18px;
+    margin: 16px 0; background: #fafafa; page-break-inside: avoid;
   }
-  .info-card-title {
-    font-weight: 600;
-    font-size: 10.5pt;
-    margin-bottom: 6px;
-    color: #1a1a1a;
-  }
-  .info-card-body {
-    font-size: 9.5pt;
-    line-height: 1.7;
-    color: #444;
-  }
+  .info-card-title { font-weight: 600; font-size: 10.5pt; margin-bottom: 6px; color: #1a1a1a; }
+  .info-card-body { font-size: 9.5pt; line-height: 1.7; color: #444; }
 
   /* ========== 图片 ========== */
-  .doc-image {
-    margin: 20px 0;
-    text-align: center;
-    page-break-inside: avoid;
-  }
-  .doc-image img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #e5e5e5;
-    border-radius: 2px;
-  }
-  .doc-image figcaption {
-    margin-top: 8px;
-    font-size: 9pt;
-    color: #999;
-    text-align: center;
-  }
+  .doc-image { margin: 20px 0; text-align: center; page-break-inside: avoid; }
+  .doc-image img { max-width: 100%; height: auto; border: 1px solid #e5e5e5; border-radius: 2px; }
+  .doc-image figcaption { margin-top: 8px; font-size: 9pt; color: #999; text-align: center; }
 
-  /* ========== ASCII 兜底 ========== */
-  pre {
-    font-family: "SF Mono", "Cascadia Code", "Fira Code", "Microsoft YaHei", monospace;
-    font-size: 7pt;
-    line-height: 1.25;
-    background: #f8f8f8;
-    border: 1px solid #e5e5e5;
-    border-radius: 2px;
-    padding: 12px 16px;
-    margin: 12px 0;
-    overflow-x: auto;
-    white-space: pre;
-    color: #555;
+  /* ========== 流程步骤 ========== */
+  .flow { margin: 20px 0; page-break-inside: avoid; }
+  .flow-steps { display: flex; gap: 12px; align-items: flex-start; flex-wrap: wrap; }
+  .flow-step {
+    flex: 1; min-width: 100px; border: 1px solid #d0d0d0; padding: 14px;
+    text-align: center; background: #fafafa;
+  }
+  .flow-step .step-num { font-size: 10pt; font-weight: 700; color: #333; margin-bottom: 4px; }
+  .flow-step .step-label { font-size: 9.5pt; font-weight: 600; margin-bottom: 4px; }
+  .flow-step .step-desc { font-size: 8.5pt; color: #666; line-height: 1.5; }
+  .flow-arrow { display: flex; align-items: center; font-size: 14pt; color: #999; }
+
+  /* ========== 决策卡片 ========== */
+  .decision-grid { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+  .decision-card {
+    width: calc(50% - 6px); border: 1px solid #d0d0d0; padding: 14px;
+    background: #fafafa; page-break-inside: avoid;
+  }
+  .decision-card .num { font-size: 18pt; font-weight: 700; color: #d5d5d5; float: left; margin-right: 12px; line-height: 1; }
+  .decision-card h4 { font-size: 10.5pt; font-weight: 600; margin-bottom: 4px; }
+  .decision-card p { font-size: 9pt; color: #555; line-height: 1.6; }
+
+  /* ========== 防御层级图 ========== */
+  .defense-stack { margin: 20px 0; page-break-inside: avoid; }
+  .defense-layer {
+    border: 1px solid #d0d0d0; padding: 12px 16px; text-align: center;
+    margin-bottom: 0;
+  }
+  .defense-layer:first-child { border-radius: 2px 2px 0 0; background: #fafafa; }
+  .defense-layer:last-child { border-radius: 0 0 2px 2px; background: #fff; }
+  .defense-layer:nth-child(2) { background: #f5f5f5; }
+  .defense-layer + .defense-layer { border-top: none; }
+  .defense-layer h4 { font-size: 10pt; font-weight: 600; }
+  .defense-layer p { font-size: 9pt; color: #555; margin-top: 2px; }
+  .defense-arrow { text-align: center; font-size: 9pt; color: #999; margin: 2px 0; }
+
+  /* ========== 引用 ========== */
+  .quote {
+    margin: 12px 0; padding: 10px 16px; border-left: 2px solid #ccc;
+    font-size: 9.5pt; color: #555; font-style: italic; background: #fafafa;
   }
 
   @media print {
     body { font-size: 10.5pt; }
-    pre { font-size: 6.5pt; }
     h1, h2, h3 { page-break-after: avoid; }
-    .data-table, .info-card, .doc-image { page-break-inside: avoid; }
+    .data-table, .info-card, .doc-image, .flow, .decision-card, .defense-stack { page-break-inside: avoid; }
   }
 </style>
 </head>
 <body>
+
+<!-- ======== 封面 ======== -->
 <div class="cover">
   <h1>简程 AI — AI 驱动的求职匹配工具</h1>
   <div class="meta">
@@ -175,158 +116,333 @@
     <p>2026 年 6 月</p>
   </div>
 </div>
-<p>================================================================================                    简程AI — 产品案例文档================================================================================</p>
-<p>【30秒电梯演讲】求职者海投简历，却不知道哪个岗位真正匹配、简历该改哪里。简程AI用语义理解替代关键词匹配，上传简历后3分钟内，告诉你最值得投的5个岗位，并给出具体到"哪句话该改成什么"的改写建议。不再盲投。</p>
+
+<!-- ======== 30秒电梯演讲 ======== -->
+<h1>30 秒电梯演讲</h1>
+<div class="quote"><p>求职者海投简历，却不知道哪个岗位真正匹配、简历该改哪里。简程 AI 用语义理解替代关键词匹配，上传简历后 3 分钟内，告诉你最值得投的 5 个岗位，并给出具体到「哪句话该改成什么」的改写建议。不再盲投。</p></div>
+
 <figure class="doc-image">
-              <img src="file:///D:/dt sf/作品集展示/portfolio/public/images/p4.PNG" alt="匹配结果页面" />
-              <figcaption>匹配结果页面</figcaption>
-            </figure>
-<figure class="doc-image">
-              <img src="file:///D:/dt sf/作品集展示/portfolio/public/images/p4.PNG" alt="匹配结果页面" />
-              <figcaption>匹配结果页面</figcaption>
-            </figure>
-<p>一、产品概述</p>
-<p>简程AI是一个AI驱动的求职匹配工具。核心功能：用户上传简历、输入求职偏好，系统对岗位进行语义匹配，返回Top 5并给出针对性简历改写建议。</p>
-<p>不是「建议强化AI经验」，而是「在第二段第一句加上你用API做过的具体事情，因为JD里这个词出现了三次」。</p>
-<p>二、为什么要做这个方向</p>
-<p>2.1 求职者的痛点</p>
+  <img src="images/p1.PNG" alt="简程 AI 产品首页截图" />
+  <figcaption>简程 AI 产品首页</figcaption>
+</figure>
+
+<hr>
+
+<!-- ======== 一、产品概述 ======== -->
+<h1>一、产品概述</h1>
+<p>简程 AI 是一个 AI 驱动的求职匹配工具。核心功能：用户上传简历、输入求职偏好，系统对岗位进行语义匹配，返回 Top 5 并给出针对性简历改写建议。</p>
+<p>不是「建议强化 AI 经验」，而是「在第二段第一句加上你用 API 做过的具体事情，因为 JD 里这个词出现了三次」。</p>
+
+<hr>
+
+<!-- ======== 二、为什么要做这个方向 ======== -->
+<h1>二、为什么要做这个方向</h1>
+
+<h2>2.1 求职者的痛点</h2>
 <p>我在求职社区中观察到几个被反复提及的共性问题：</p>
-<p>- 岗位推荐不精准：平台推送的岗位匹配度低，「推荐理由」是模板化套话，没有解释  "为什么匹配、差在哪里"- 简历修改缺乏指导：求职者知道要针对JD改简历，但没有工具告诉他们具体改什么、改哪里- 决策依赖直觉：判断一个岗位值不值得投，完全靠个人经验和当时的状态</p>
-<p>2.2 现有方案的局限</p>
-<p>主流招聘平台的核心匹配逻辑是关键词覆盖，而非语义理解。「数据分析」和「数据驱动」在关键词层面不相关，但在实际能力上是同一件事。这一根本局限导致真正匹配的岗位可能被过滤掉，不匹配的反而被推到前面。</p>
-<p>2.3 从双边视角看这个问题</p>
-<p>这个匹配问题同样让招聘方痛苦：HR收到大量用关键词堆砌的简历，但真正合适的人被埋没了。如果匹配能理解语义，未来向企业端提供一个"这个候选人为什么值得面试"的结构化摘要，就能打通双边价值。当前从求职者侧先验证匹配有效性，双边的平台思维是长期方向。</p>
-<p>三、用户画像与场景</p>
-<p>典型用户小林，应届硕士。做过数据分析、写过SQL、实习用过Python。手里有30个JD，每次看都觉得自己差不多符合、又不完全符合，纠结很久。</p>
-<p>她上传简历，告诉系统想找「上海AI方向产品岗，20k+」，系统返回5个岗位——每个都有评分和具体理由：「你的Gemini API经验直接对应JD第二条，但你没有提到跨部门协作，JD反复强调这个，建议补一段经历描述。」她照着改完，20分钟就投递出去了。</p>
-<p>四、产品方案</p>
-<p>4.1 核心流程</p>
 <ul>
-<li>上传简历(PDF) → AI提取技能和经历</li>
-<li>输入求职偏好(自然语言，非必填) → 语义匹配</li>
-<li>返回5个匹配岗位 → 三维度评分 + 具体推荐理由</li>
-<li>查看改写建议 → 强化点 / 快速改进 / 重新定位</li>
+  <li><strong>岗位推荐不精准：</strong>平台推送的岗位匹配度低，「推荐理由」是模板化套话，没有解释「为什么匹配、差在哪里」</li>
+  <li><strong>简历修改缺乏指导：</strong>求职者知道要针对 JD 改简历，但没有工具告诉他们具体改什么、改哪里</li>
+  <li><strong>决策依赖直觉：</strong>判断一个岗位值不值得投，完全靠个人经验和当时的状态</li>
 </ul>
-<p>全流程不超过3分钟。</p>
+
+<h2>2.2 现有方案的局限</h2>
+<p>主流招聘平台的核心匹配逻辑是<strong>关键词覆盖</strong>，而非语义理解。「数据分析」和「数据驱动」在关键词层面不相关，但在实际能力上是同一件事。这一根本局限导致真正匹配的岗位可能被过滤掉，不匹配的反而被推到前面。</p>
+
+<h2>2.3 从双边视角看这个问题</h2>
+<p>这个匹配问题同样让招聘方痛苦：HR 收到大量用关键词堆砌的简历，但真正合适的人被埋没了。如果匹配能理解语义，未来向企业端提供一个「这个候选人为什么值得面试」的结构化摘要，就能打通双边价值。当前从求职者侧先验证匹配有效性，双边的平台思维是长期方向。</p>
+
+<hr>
+
+<!-- ======== 三、用户画像与场景 ======== -->
+<h1>三、用户画像与场景</h1>
+<p>典型用户小林，应届硕士。做过数据分析、写过 SQL、实习用过 Python。手里有 30 个 JD，每次看都觉得自己差不多符合、又不完全符合，纠结很久。</p>
+<p>她上传简历，告诉系统想找「上海 AI 方向产品岗，20k+」，系统返回 5 个岗位——每个都有评分和具体理由：「你的 Gemini API 经验直接对应 JD 第二条，但你没有提到跨部门协作，JD 反复强调这个，建议补一段经历描述。」她照着改完，20 分钟就投递出去了。</p>
+
+<hr>
+
+<!-- ======== 四、产品方案 ======== -->
+<h1>四、产品方案</h1>
+
+<h2>4.1 核心流程</h2>
+<div class="flow">
+  <div class="flow-steps">
+    <div class="flow-step">
+      <div class="step-num">①</div>
+      <div class="step-label">上传简历</div>
+      <div class="step-desc">PDF 解析<br>AI 提取技能和经历</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">
+      <div class="step-num">②</div>
+      <div class="step-label">输入偏好</div>
+      <div class="step-desc">自然语言，非必填<br>语义匹配</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">
+      <div class="step-num">③</div>
+      <div class="step-label">匹配结果</div>
+      <div class="step-desc">Top 5 岗位<br>三维度评分 + 理由</div>
+    </div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-step">
+      <div class="step-num">④</div>
+      <div class="step-label">改写建议</div>
+      <div class="step-desc">强化点 / 快速改进<br>/ 重新定位</div>
+    </div>
+  </div>
+</div>
+<p>全流程不超过 3 分钟。</p>
+
 <figure class="doc-image">
-              <img src="file:///D:/dt sf/作品集展示/portfolio/public/images/p5.PNG" alt="改写建议页面" />
-              <figcaption>改写建议页面</figcaption>
-            </figure>
+  <img src="images/p3.PNG" alt="匹配过程截图" />
+  <figcaption>匹配过程：上传简历后实时语义解析与岗位匹配</figcaption>
+</figure>
+
 <figure class="doc-image">
-              <img src="file:///D:/dt sf/作品集展示/portfolio/public/images/p6.PNG" alt="简程 AI 其他展示" />
-              <figcaption>简程 AI 其他展示</figcaption>
-            </figure>
+  <img src="images/p4.PNG" alt="匹配结果页面" />
+  <figcaption>匹配结果：三维度独立评分 + 具体推荐理由</figcaption>
+</figure>
+
 <figure class="doc-image">
-              <img src="file:///D:/dt sf/作品集展示/portfolio/public/images/p5.PNG" alt="改写建议页面" />
-              <figcaption>改写建议页面</figcaption>
-            </figure>
-<figure class="doc-image">
-              <img src="file:///D:/dt sf/作品集展示/portfolio/public/images/p6.PNG" alt="简程 AI 其他展示" />
-              <figcaption>简程 AI 其他展示</figcaption>
-            </figure>
-<p>4.2 四个关键设计决策</p>
-<p>决策① 偏好输入：自然语言，不是表单用户在求职初期往往没有清晰的方向画像。一个自然语言输入框降低使用门槛，同时给系统足够匹配信号。</p>
-<p>决策② 评分体系：三维度分开，不合并技能匹配 / 经验匹配 / 方向匹配独立打分。用户可能技能高度匹配但方向不对口，综合分会掩盖这个差异。分开打分，让用户自己判断。</p>
-<p>决策③ 改写建议：必须是"位置+内容+理由"三元组调试Prompt时最大的教训：早期模型输出方向性建议（"建议强调AI经验"），用户知道要改但不知道改哪里——等于没有输出。强制三元组后，建议从"方向"变成了"可执行指令"。</p>
-<p>（一个已知的产品哲学张力：三元组的"具体性"是核心竞争力，但越具体，对用户简历素材的要求就越高。对简历本身薄弱的求职者——他们恰恰最需要帮助——极度具体的建议可能从"赋能"滑向"提醒你缺什么"。这不是MVP要解决的，但值得标记。）</p>
-<p>决策④ 错误状态：用户永远看不到技术报错每类技术错误都翻译成用户语言——「简历格式好像有点问题，换个PDF试试？」而不是「JSON parse error」。LLM的不可靠性在产品层消化。</p>
-<p>五、AI产品设计——把不可靠的LLM变成可靠的产品</p>
-<p>5.1 Prompt工程：三层约束</p>
-<p>早期Prompt输出的是"方向性建议"，用户看完无法执行。三层约束解决：</p>
-<p>角色锚定：模型设定为「资深面试官」而非「职业规划顾问」——角色不同，输出完全不同  禁用词表：禁止「建议」「努力」「可以考虑」「加强」「提升」等模糊动词  格式约束：强制输出「位置+修改内容+理由」三元结构</p>
-<p>关键经验：Few-shot范例比纯文字约束有效得多。嵌入2-3个标准输出范例后，模型输出的可执行性显著提升——模型是通过模仿来学习的。</p>
-<p>5.2 产品层兜底：三层防御</p>
-<p>模型有时返回标准JSON，有时夹带Markdown标记。前端解析失败就白屏——不能接受。三层防御：</p>
-<p>Prompt层 → Few-shot范例 + 严格格式约束  ↓ 失败则进入  预处理层 → API响应统一清洗（去Markdown标记、补全残缺JSON）  ↓ 失败则进入  降级兜底 → 显示友好提示，保留用户输入数据</p>
-<p>5.3 输出质量验证</p>
-<p>对同一份简历+JD，连续调用API 10次，检验关键信息一致性。当前约80%的输出在核心匹配结论上保持一致，剩余20%差异主要体现在措辞层面。</p>
-<p>测试中发现的典型Badcase：在第3次和第7次测试中，模型将简历中的「用户研究」经验错误归类为「客服经验」。这提示Prompt需要加强对专业术语的界定——这是一个已知待优化项。</p>
-<p>AI PM最核心的命题就是：当AI出错时，用户应该看到什么？答案是——用户永远不应该知道AI出错了。</p>
-<p>六、MVP阶段的取舍</p>
-<p>做了什么：  - PDF简历上传与AI解析  - 语义匹配 + 三维度评分  - 针对性改写建议（三元组结构）  - 浏览器本地历史记录  - 错误状态全覆盖</p>
-<p>主动没做什么——以及为什么：  - 不做账户体系：MVP验证的是匹配+改写有没有用。当v2.0需要跨会话记忆和个性化    推荐时，引入轻量级账户  - 不做真实岗位爬取：先验证匹配算法有效性。MVP用30条覆盖多行业的模拟岗位，    聚焦一个问题——AI能否理解「数据分析」和「数据驱动」是同一件事？    验证通过后，v2.0接入RAG获取实时岗位  - 不做简历模板/美化：聚焦内容匹配，不做格式优化。当匹配功能稳定后考虑  - 不做社交/分享：核心链路跑通前，分支功能都是干扰。当用户有自然分享需求时再评估</p>
-<p>这些"不做"和"做了什么"同等重要。PM的核心价值之一是判断什么不该加、什么时候该加。</p>
-<p>七、项目产出</p>
-<p>技术栈：Next.js 16 + React 19 + TypeScript + Tailwind CSS（前端）        Next.js API Routes（后端）        DeepSeek API（AI服务）        Prisma ORM + PostgreSQL（数据存储）        Vercel（部署）</p>
-<p>================================================================================八、衡量体系：上线后看什么</p>
-<p>8.1 核心漏斗（会话内四步）</p>
+  <img src="images/p5.PNG" alt="改写建议页面" />
+  <figcaption>改写建议：位置 + 内容 + 理由三元组结构</figcaption>
+</figure>
+
+<h2>4.2 四个关键设计决策</h2>
+
+<div class="decision-grid">
+  <div class="decision-card">
+    <div class="num">①</div>
+    <h4>偏好输入：自然语言，不是表单</h4>
+    <p>用户在求职初期往往没有清晰的方向画像。一个自然语言输入框降低使用门槛，同时给系统足够匹配信号。</p>
+  </div>
+
+  <div class="decision-card">
+    <div class="num">②</div>
+    <h4>评分体系：三维度分开，不合并</h4>
+    <p>技能匹配 / 经验匹配 / 方向匹配独立打分。用户可能技能高度匹配但方向不对口，综合分会掩盖这个差异。分开打分，让用户自己判断。</p>
+  </div>
+
+  <div class="decision-card">
+    <div class="num">③</div>
+    <h4>改写建议：「位置+内容+理由」三元组</h4>
+    <p>调试 Prompt 时最大的教训：早期模型输出方向性建议（「建议强调 AI 经验」），用户知道要改但不知道改哪里——<strong>等于没有输出。</strong>强制三元组后，建议从「方向」变成「可执行指令」。</p>
+  </div>
+
+  <div class="decision-card">
+    <div class="num">④</div>
+    <h4>错误状态：用户永远看不到技术报错</h4>
+    <p>每类技术错误都翻译成用户语言——「简历格式好像有点问题，换个 PDF 试试？」而不是「JSON parse error」。LLM 的不可靠性在产品层消化。</p>
+  </div>
+</div>
+
+<div class="info-card">
+  <div class="info-card-title">一个已知的产品哲学张力</div>
+  <div class="info-card-body">三元组的「具体性」是核心竞争力，但越具体，对用户简历素材的要求就越高。对简历本身薄弱的求职者——他们恰恰最需要帮助——极度具体的建议可能从「赋能」滑向「提醒你缺什么」。这不是 MVP 要解决的，但值得标记。</div>
+</div>
+
+<hr>
+
+<!-- ======== 五、AI产品设计 ======== -->
+<h1>五、AI 产品设计——把不可靠的 LLM 变成可靠的产品</h1>
+
+<h2>5.1 Prompt 工程：三层约束</h2>
+<p>早期 Prompt 输出的是「方向性建议」，用户看完无法执行。三层约束解决：</p>
+
 <table class="data-table">
-<tbody>
-<tr>
-<td>步骤</td>
-<td>埋点事件</td>
-<td>目标值</td>
-</tr>
-<tr>
-<td>① 上传简历</td>
-<td>resume_uploaded</td>
-<td>—</td>
-</tr>
-<tr>
-<td>② 查看匹配结果</td>
-<td>match_results_viewed</td>
-<td>≥70%（核心链路完成率）</td>
-</tr>
-<tr>
-<td>③ 查看改写建议</td>
-<td>rewrite_suggestion_viewed</td>
-<td>≥65%</td>
-</tr>
-<tr>
-<td>④ 点击投递</td>
-<td>apply_clicked</td>
-<td>>30%（投递转化率）</td>
-</tr>
-</tbody>
+  <thead><tr><th>层级</th><th>策略</th><th>说明</th></tr></thead>
+  <tbody>
+    <tr><td>第一层</td><td>角色锚定</td><td>模型设定为「资深面试官」而非「职业规划顾问」——角色不同，输出完全不同</td></tr>
+    <tr><td>第二层</td><td>禁用词表</td><td>禁止「建议」「努力」「可以考虑」「加强」「提升」等模糊动词</td></tr>
+    <tr><td>第三层</td><td>格式约束 + Few-shot</td><td>强制输出「位置+修改内容+理由」三元结构；嵌入 2–3 个标准输出范例</td></tr>
+  </tbody>
 </table>
-<p>漏斗之前：访问→上传。若此步转化率极低，后续优化得再好也只影响一小撮人。MVP暂不设目标，上线首周即应观测。</p>
-<p>跨会话留存独立追踪：7日回访率>25%，14日留存暂不设硬目标但持续观测。漏斗回答"这次体验顺畅吗"，留存回答"用户还愿意回来吗"。</p>
-<p>8.2 「匹配成功」的三层定义</p>
-<p>投递点击率高≠匹配成功——推荐"腾讯PM"给任何人都被点，体现的是岗位吸引力而非匹配能力。需三层交叉验证：</p>
+
+<p><strong>关键经验：Few-shot 范例比纯文字约束有效得多。</strong>嵌入 2–3 个标准输出范例后，模型输出的可执行性显著提升——模型是通过模仿来学习的。</p>
+
+<h2>5.2 产品层兜底：三层防御</h2>
+
+<div class="defense-stack">
+  <div class="defense-layer">
+    <h4>第一层 · Prompt 层</h4>
+    <p>Few-shot 范例 + 严格格式约束 + 角色锚定 → 确保 AI 按要求输出</p>
+  </div>
+  <div class="defense-arrow">↓ 失败则进入 ↓</div>
+  <div class="defense-layer">
+    <h4>第二层 · 预处理层</h4>
+    <p>API 响应统一清洗：去 Markdown 标记、补全残缺 JSON、格式校验</p>
+  </div>
+  <div class="defense-arrow">↓ 失败则进入 ↓</div>
+  <div class="defense-layer">
+    <h4>第三层 · 降级兜底</h4>
+    <p>显示友好提示，保留用户输入数据——用户永远不知道 AI 出错了</p>
+  </div>
+</div>
+
+<h2>5.3 输出质量验证</h2>
+<p>对同一份简历+JD，连续调用 API 10 次，检验关键信息一致性。当前约 80% 的输出在核心匹配结论上保持一致，剩余 20% 差异主要体现在措辞层面。</p>
+<p>测试中发现的典型 Badcase：在第 3 次和第 7 次测试中，模型将简历中的「用户研究」经验错误归类为「客服经验」。这提示 Prompt 需要加强对专业术语的界定——这是一个已知待优化项。</p>
+<div class="quote"><p>AI PM 最核心的命题就是：当 AI 出错时，用户应该看到什么？答案是——<strong>用户永远不应该知道 AI 出错了。</strong></p></div>
+
+<hr>
+
+<!-- ======== 六、MVP阶段的取舍 ======== -->
+<h1>六、MVP 阶段的取舍</h1>
+
+<h2>做了什么</h2>
+<ul>
+  <li>PDF 简历上传与 AI 解析</li>
+  <li>语义匹配 + 三维度评分</li>
+  <li>针对性改写建议（三元组结构）</li>
+  <li>浏览器本地历史记录</li>
+  <li>错误状态全覆盖</li>
+</ul>
+
+<h2>主动没做什么——以及为什么</h2>
 <table class="data-table">
-<tbody>
-<tr>
-<td>层级</td>
-<td>观测指标</td>
-<td>核心问题</td>
-</tr>
-<tr>
-<td>行为层</td>
-<td>核心链路完成率、投递转化率</td>
-<td>用户做完期望的动作了吗</td>
-</tr>
-<tr>
-<td>体验层</td>
-<td>建议页停留时长、踩/赞(v1.1)</td>
-<td>用户觉得有用吗</td>
-</tr>
-<tr>
-<td>结果层</td>
-<td>7日回访率、偏好调整行为</td>
-<td>用户行为改变了吗</td>
-</tr>
-</tbody>
+  <thead><tr><th>没做</th><th>原因</th><th>计划</th></tr></thead>
+  <tbody>
+    <tr><td>账户体系</td><td>MVP 验证的是匹配+改写有没有用</td><td>v2.0 引入轻量级账户（跨会话记忆需求出现时）</td></tr>
+    <tr><td>真实岗位爬取</td><td>先验证匹配算法有效性。MVP 用 30 条模拟岗位聚焦一个问题——AI 能否理解「数据分析」和「数据驱动」是同一件事？</td><td>v2.0 接入 RAG 获取实时岗位</td></tr>
+    <tr><td>简历模板 / 美化</td><td>聚焦内容匹配，不做格式优化</td><td>匹配功能稳定后考虑</td></tr>
+    <tr><td>社交 / 分享</td><td>核心链路跑通前，分支功能都是干扰</td><td>用户有自然分享需求时再评估</td></tr>
+  </tbody>
 </table>
-<p>三维皆✅=强匹配成功；行为✅+体验❌+留存❌=最危险的虚假繁荣。</p>
-<p>8.3 数据看板总表</p>
-<p>原则：只放"看到数字后会做不同决策"的指标。</p>
-<p>指标组   │ 指标            │ 目标    │ 频率 │ 触发行动  ─────────┼─────────────────┼────────┼─────┼──────────────────  漏斗     │ 访问→上传       │ 追踪中  │ 日   │ <20%→首页/上传有问题           │ 核心链路完成率   │ ≥70%    │ 日   │ 连续3天<50%→全链路排查           │ 投递转化率       │ >30%    │ 日   │ <15%→匹配质量出问题           │ 匹配→查看改写   │ ≥65%    │ 日   │ <50%→入口不显眼/价值不足           │ 改写→投递       │ ≥55%    │ 日   │ <35%→匹配/岗位问题  ─────────┼─────────────────┼────────┼─────┼──────────────────  匹配质量 │ 改写建议采纳率   │ ≥50%    │ 周   │ <30%→重构Prompt           │ 踩/赞(v1.1)     │ 赞≥80%  │ 周   │ <70%→分组排查           │ Badcase趋势      │ 不增长  │ 周   │ 突增→Prompt漂移  ─────────┼─────────────────┼────────┼─────┼──────────────────  增长留存 │ 7日回访率        │ >25%    │ 周   │ <15%→价值感不足           │ 14日留存         │ 追踪中  │ 双周  │ 落差>50%→关键流失窗  ─────────┼─────────────────┼────────┼─────┼──────────────────  技术健康 │ PDF解析成功率    │ ≥95%    │ 日   │ <90%→格式兼容           │ API响应时长      │ <15s    │ 日   │ 连续>30s→降级策略           │ 降级兜底触发比   │ <5%     │ 日   │ >10%→供应商问题</p>
-<p>8.4 诊断维度：按建议类型拆分采纳率</p>
-<p>4.1将建议分为强化点/快速改进/重新定位三类，但看板只追踪聚合采纳率。三类建议对用户的能力要求完全不同：快速改进（改动词/表述）大概率可执行；强化点（补充经历细节）取决于是否真做过；重新定位（转方向）可能完全无法执行。</p>
-<p>如果"快速改进"80%+"强化点"40%+"重新定位"5%，加权平均达标，但"重新定位"完全无效——这是区分"建议格式不好"和"建议不可执行"两种不同病因的唯一手段。建议v1.1起按类型拆分追踪，作为匹配质量的月度诊断项。</p>
-<p>================================================================================九、Prompt迭代实验与阶段判断</p>
-<p>9.1 A/B实验：验证三元组Prompt</p>
-<p>对照组 │ 方向性建议Prompt（旧版）  实验组 │ 三元组Prompt（角色锚定+禁用词表+位置+内容+理由格式约束）  分流   │ 用户级随机50/50，同用户始终同组；≥2周  样本量 │ 每组≥100个完成查看改写建议的用户  主指标 │ 改写建议采纳率（复制/展开行为）  护栏   │ 整体投递转化率不降</p>
-<p>⚠️ 前置条件：若"匹配→查看改写"转化率<50%，应先优化入口而非跑A/B——否则"无差异"可能是用户根本没看到，不是格式没用。</p>
-<p>决策规则：</p>
-<p>结果                 │ 行动  ─────────────────────┼──────────────────  采纳率↑ + 投递率不降 │ 全量上线三元组  采纳率↑ + 投递率↓   │ 检查是否"过度修改"导致简历失真  采纳率无差异         │ 复盘格式约束/Few-shot范例  采纳率↓             │ 检查理解成本，考虑简化</p>
-<p>9.2 阶段跃迁：从MVP到PMF的数据化判断</p>
-<p>跃迁        │ 进入条件                                              │ 需  ────────────┼─────────────────────────────────────────────────────┼──────  MVP→v1.1   │ 核心链路完成率≥60% + 改写建议采纳率≥40% + 20条反馈   │ ≥200  （反馈机制) │                                                      │ 会话  ────────────┼─────────────────────────────────────────────────────┼──────  v1.1→v2.0  │ Badcase连续4周不增 + 回访用户>50%使用偏好调整        │ ≥500  （接入RAG） │                                                      │ 会话  ────────────┼─────────────────────────────────────────────────────┼──────  v2.0→v3.0  │ 7日留存≥25% + 14日≥15% + 单用户≥3次匹配占比>10%     │ ≥1000  （跨会话）  │                                                      │ 会话</p>
-<p>数据不能消除误判，但保证"做决策时知道自己赌的是什么"。</p>
-<p>================================================================================十、坦诚</p>
-<p>执行层面：以上框架在MVP阶段无法运行——无账户体系→留存不准、模拟岗位→投递行为不可信、样本量不足→A/B条件不满足。</p>
-<p>认知层面：产品建立在一个核心假设上——用户与JD的差距主要是表达性遗漏（做过但没写），而非结构性缺失（根本没做过）。三元组优雅地解决了前者，对后者无能为力。MVP用模拟岗位验证此假设，但信号可能系统性偏乐观——模拟岗位是为用户简历挑选的，真实岗位不是。v2.0接入真实岗位后，将优先通过建议类型间采纳率差异（见8.4）验证：用户面对的是"不会写"还是"没东西可写"。</p>
-<p>面试官关心的不是"你有数据吗"，而是"你知道产品的核心假设是什么，并知道怎么用数据验证它吗"。本文档就是我的回答。数据可以等到上线后才有。数据思维不能。</p>
-<p>================================================================================                        文档结束================================================================================</p>
+
+<p>这些「不做」和「做了什么」同等重要——<strong>PM 的核心价值之一是判断什么不该加、什么时候该加。</strong></p>
+
+<hr>
+
+<!-- ======== 七、项目产出 ======== -->
+<h1>七、项目产出</h1>
+
+<figure class="doc-image">
+  <img src="images/p6.PNG" alt="简程 AI 各页面展示" />
+  <figcaption>简程 AI 各页面截图展示</figcaption>
+</figure>
+
+<h2>技术栈</h2>
+<table class="data-table">
+  <thead><tr><th>层级</th><th>选型</th></tr></thead>
+  <tbody>
+    <tr><td>前端框架</td><td>Next.js 16 + React 19 + TypeScript + Tailwind CSS</td></tr>
+    <tr><td>后端</td><td>Next.js API Routes</td></tr>
+    <tr><td>AI 服务</td><td>DeepSeek API</td></tr>
+    <tr><td>数据存储</td><td>Prisma ORM + PostgreSQL</td></tr>
+    <tr><td>部署</td><td>Vercel</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<!-- ======== 八、衡量体系 ======== -->
+<h1>八、衡量体系：上线后看什么</h1>
+
+<h2>8.1 核心漏斗（会话内四步）</h2>
+<table class="data-table">
+  <thead><tr><th>步骤</th><th>埋点事件</th><th>目标值</th></tr></thead>
+  <tbody>
+    <tr><td>① 上传简历</td><td>resume_uploaded</td><td>—</td></tr>
+    <tr><td>② 查看匹配结果</td><td>match_results_viewed</td><td>≥70%（核心链路完成率）</td></tr>
+    <tr><td>③ 查看改写建议</td><td>rewrite_suggestion_viewed</td><td>≥65%</td></tr>
+    <tr><td>④ 点击投递</td><td>apply_clicked</td><td>&gt;30%（投递转化率）</td></tr>
+  </tbody>
+</table>
+<p>漏斗之前：访问→上传。若此步转化率极低，后续优化得再好也只影响一小撮人。MVP 暂不设目标，上线首周即应观测。</p>
+<p>跨会话留存独立追踪：7 日回访率 &gt;25%，14 日留存暂不设硬目标但持续观测。漏斗回答「这次体验顺畅吗」，留存回答「用户还愿意回来吗」。</p>
+
+<h2>8.2 「匹配成功」的三层定义</h2>
+<p>投递点击率高 ≠ 匹配成功——推荐「腾讯 PM」给任何人都被点，体现的是岗位吸引力而非匹配能力。需三层交叉验证：</p>
+<table class="data-table">
+  <thead><tr><th>层级</th><th>观测指标</th><th>核心问题</th></tr></thead>
+  <tbody>
+    <tr><td>行为层</td><td>核心链路完成率、投递转化率、改写建议采纳率</td><td>用户做完期望的动作了吗？</td></tr>
+    <tr><td>体验层</td><td>建议页停留时长、踩/赞（v1.1）</td><td>用户觉得有用吗？</td></tr>
+    <tr><td>结果层</td><td>7 日回访率、偏好调整行为</td><td>用户行为改变了吗？</td></tr>
+  </tbody>
+</table>
+<p>三维皆 ✅ = 强匹配成功；行为 ✅ + 体验 ❌ + 留存 ❌ = 最危险的虚假繁荣。</p>
+
+<h2>8.3 数据看板总表</h2>
+<p>原则：只放「看到数字后会做不同决策」的指标。</p>
+<table class="data-table">
+  <thead><tr><th>指标组</th><th>指标</th><th>目标</th><th>频率</th><th>触发行动</th></tr></thead>
+  <tbody>
+    <tr><td>漏斗</td><td>访问→上传</td><td>追踪中</td><td>日</td><td>&lt;20% → 首页/上传有问题</td></tr>
+    <tr><td>漏斗</td><td>核心链路完成率</td><td>≥70%</td><td>日</td><td>连续 3 天 &lt;50% → 全链路排查</td></tr>
+    <tr><td>漏斗</td><td>投递转化率</td><td>&gt;30%</td><td>日</td><td>&lt;15% → 匹配质量出问题</td></tr>
+    <tr><td>漏斗</td><td>匹配→查看改写</td><td>≥65%</td><td>日</td><td>&lt;50% → 入口不显眼/价值不足</td></tr>
+    <tr><td>漏斗</td><td>改写→投递</td><td>≥55%</td><td>日</td><td>&lt;35% → 匹配/岗位问题</td></tr>
+    <tr><td>匹配质量</td><td>改写建议采纳率</td><td>≥50%</td><td>周</td><td>&lt;30% → 重构 Prompt</td></tr>
+    <tr><td>匹配质量</td><td>踩/赞（v1.1）</td><td>赞≥80%</td><td>周</td><td>&lt;70% → 分组排查</td></tr>
+    <tr><td>匹配质量</td><td>Badcase 趋势</td><td>不增长</td><td>周</td><td>突增 → Prompt 漂移</td></tr>
+    <tr><td>增长留存</td><td>7 日回访率</td><td>&gt;25%</td><td>周</td><td>&lt;15% → 价值感不足</td></tr>
+    <tr><td>增长留存</td><td>14 日留存</td><td>追踪中</td><td>双周</td><td>落差 &gt;50% → 关键流失窗口</td></tr>
+    <tr><td>技术健康</td><td>PDF 解析成功率</td><td>≥95%</td><td>日</td><td>&lt;90% → 格式兼容问题</td></tr>
+    <tr><td>技术健康</td><td>API 响应时长</td><td>&lt;15s</td><td>日</td><td>连续 &gt;30s → 降级策略</td></tr>
+    <tr><td>技术健康</td><td>降级兜底触发比</td><td>&lt;5%</td><td>日</td><td>&gt;10% → 供应商问题</td></tr>
+  </tbody>
+</table>
+
+<h2>8.4 诊断维度：按建议类型拆分采纳率</h2>
+<p>三类建议对用户的能力要求完全不同：快速改进（改动词/表述）大概率可执行；强化点（补充经历细节）取决于是否真做过；重新定位（转方向）可能完全无法执行。</p>
+<p>如果「快速改进」80% +「强化点」40% +「重新定位」5%，加权平均达标，但「重新定位」完全无效——这是区分「建议格式不好」和「建议不可执行」两种不同病因的唯一手段。建议 v1.1 起按类型拆分追踪，作为匹配质量的月度诊断项。</p>
+
+<hr>
+
+<!-- ======== 九、Prompt迭代实验与阶段判断 ======== -->
+<h1>九、Prompt 迭代实验与阶段判断</h1>
+
+<h2>9.1 A/B 实验：验证三元组 Prompt</h2>
+<table class="data-table">
+  <thead><tr><th>维度</th><th>对照组</th><th>实验组</th></tr></thead>
+  <tbody>
+    <tr><td>Prompt</td><td>方向性建议 Prompt（旧版）</td><td>三元组 Prompt（角色锚定+禁用词表+位置+内容+理由格式约束）</td></tr>
+    <tr><td>分流</td><td colspan="2">用户级随机 50/50，同用户始终同组；≥2 周</td></tr>
+    <tr><td>样本量</td><td colspan="2">每组 ≥100 个完成查看改写建议的用户</td></tr>
+    <tr><td>主指标</td><td colspan="2">改写建议采纳率（复制/展开行为）</td></tr>
+    <tr><td>护栏</td><td colspan="2">整体投递转化率不降</td></tr>
+  </tbody>
+</table>
+
+<div class="info-card">
+  <div class="info-card-title">⚠️ 前置条件</div>
+  <div class="info-card-body">若「匹配→查看改写」转化率 &lt;50%，应先优化入口而非跑 A/B——否则「无差异」可能是用户根本没看到，不是格式没用。</div>
+</div>
+
+<h2>决策规则</h2>
+<table class="data-table">
+  <thead><tr><th>结果</th><th>行动</th></tr></thead>
+  <tbody>
+    <tr><td>采纳率 ↑ + 投递率不降</td><td>全量上线三元组</td></tr>
+    <tr><td>采纳率 ↑ + 投递率 ↓</td><td>检查是否「过度修改」导致简历失真</td></tr>
+    <tr><td>采纳率无差异</td><td>复盘格式约束 / Few-shot 范例</td></tr>
+    <tr><td>采纳率 ↓</td><td>检查理解成本，考虑简化</td></tr>
+  </tbody>
+</table>
+
+<h2>9.2 阶段跃迁：从 MVP 到 PMF 的数据化判断</h2>
+<table class="data-table">
+  <thead><tr><th>跃迁</th><th>进入条件</th><th>需</th></tr></thead>
+  <tbody>
+    <tr><td>MVP → v1.1（反馈机制）</td><td>核心链路完成率 ≥60% + 改写建议采纳率 ≥40% + 20 条反馈</td><td>≥200 会话</td></tr>
+    <tr><td>v1.1 → v2.0（接入 RAG）</td><td>Badcase 连续 4 周不增 + 回访用户 &gt;50% 使用偏好调整</td><td>≥500 会话</td></tr>
+    <tr><td>v2.0 → v3.0（跨会话）</td><td>7 日留存 ≥25% + 14 日 ≥15% + 单用户 ≥3 次匹配占比 &gt;10%</td><td>≥1000 会话</td></tr>
+  </tbody>
+</table>
+<p>数据不能消除误判，但保证「做决策时知道自己赌的是什么」。</p>
+
+<hr>
+
+<!-- ======== 十、坦诚 ======== -->
+<h1>十、坦诚</h1>
+
+<p><strong>执行层面：</strong>以上框架在 MVP 阶段无法运行——无账户体系 → 留存不准、模拟岗位 → 投递行为不可信、样本量不足 → A/B 条件不满足。</p>
+
+<p><strong>认知层面：</strong>产品建立在一个核心假设上——用户与 JD 的差距主要是<strong>表达性遗漏</strong>（做过但没写），而非结构性缺失（根本没做过）。三元组优雅地解决了前者，对后者无能为力。MVP 用模拟岗位验证此假设，但信号可能系统性偏乐观——模拟岗位是为用户简历挑选的，真实岗位不是。v2.0 接入真实岗位后，将优先通过建议类型间采纳率差异验证：用户面对的是「不会写」还是「没东西可写」。</p>
+
+<div class="quote"><p>面试官关心的不是「你有数据吗」，而是「你知道产品的核心假设是什么，并知道怎么用数据验证它吗」。本文档就是我的回答。数据可以等到上线后才有。<strong>数据思维不能。</strong></p></div>
+
 </body>
 </html>

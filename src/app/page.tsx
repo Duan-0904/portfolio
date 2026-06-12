@@ -8,14 +8,29 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="mx-auto max-w-content px-4 sm:px-0">
-        <Hero />
-        <div className="space-y-[120px] pb-[120px]">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+
+      {/* ======== Hero 区块：白底 ======== */}
+      <section className="bg-[#fafafa]">
+        <div className="mx-auto max-w-content px-4 sm:px-0">
+          <Hero />
         </div>
-      </main>
+      </section>
+
+      {/* ======== 项目一：浅灰底 ======== */}
+      <section className="bg-[#f7f7f7]">
+        <div className="mx-auto max-w-content px-4 sm:px-0 py-[100px]">
+          <ProjectCard project={projects[0]} />
+        </div>
+      </section>
+
+      {/* ======== 项目二：白底 ======== */}
+      <section className="bg-[#fafafa]">
+        <div className="mx-auto max-w-content px-4 sm:px-0 py-[100px]">
+          <ProjectCard project={projects[1]} />
+        </div>
+      </section>
+
+      {/* ======== Footer：浅灰底 ======== */}
       <Footer />
     </>
   );

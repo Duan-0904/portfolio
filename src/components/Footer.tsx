@@ -2,7 +2,7 @@ import { footerData } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#e5e5e5]">
+    <footer className="border-t border-[#e5e5e5] bg-[#f7f7f7]">
       <div className="mx-auto max-w-content px-4 py-14 sm:px-0">
         <h2 className="text-[28px] leading-tight tracking-tight sm:text-[1.75rem]">
           联系方式
