@@ -3,6 +3,8 @@
 // 修改文案只需改这个文件，不用进组件里找文字
 // ============================================================
 
+import { t4_PNG, p1_PNG, p3_PNG, p4_PNG, p5_PNG } from "./imageData";
+
 // ============================================================
 // 结构化数据：用于在页面中渲染表格/结构图，替代文档截图
 // ============================================================
@@ -324,7 +326,7 @@ export const projects = [
     title: "西青融媒 · 轻量级内容运营体系",
     subtitle:
       "为 2000+ 中小县级融媒体中心设计的内容-分发-增长飞轮模型。不靠堆资源，靠让现有资源发挥数倍效果。",
-    image: "/images/t4.PNG",
+    image: t4_PNG,
     imageAlt: "内容-分发-增长三层飞轮模型架构图",
     keyMetrics: [
       {
@@ -348,7 +350,7 @@ export const projects = [
     title: "简程 AI",
     subtitle:
       "AI 驱动的求职匹配工具。用语义理解替代关键词匹配，告诉你不只投哪个、还告诉你怎么改。",
-    image: "/images/p1.PNG",
+    image: p1_PNG,
     imageAlt: "简程 AI 产品首页截图",
     keyMetrics: [
       {
@@ -369,17 +371,17 @@ export const projects = [
     ],
     keyDataImages: [
       {
-        src: "/images/p3.PNG",
+        src: p3_PNG,
         alt: "匹配过程截图",
         caption: "匹配过程：上传简历后实时语义解析与岗位匹配",
       },
       {
-        src: "/images/p4.PNG",
+        src: p4_PNG,
         alt: "匹配结果页面",
         caption: "匹配结果：三维度独立评分 + 具体推荐理由",
       },
       {
-        src: "/images/p5.PNG",
+        src: p5_PNG,
         alt: "改写建议页面",
         caption: "改写建议：位置 + 内容 + 理由三元组结构",
       },

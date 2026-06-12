@@ -64,19 +64,19 @@ export default function ProjectCard({ project }: { project: Project }) {
           </div>
         )}
 
-        {/* PDF 下载链接 */}
+        {/* 完整文档链接 */}
         <p className="mt-10">
           <a
             href={
               project.id === "zhongxiaorongmei"
-                ? "/pdf/中小融媒内容运营体系.pdf"
-                : "/pdf/简程AI.pdf"
+                ? "/pdf/中小融媒内容运营体系.html"
+                : "/pdf/简程AI.html"
             }
             className="inline-flex items-center gap-1 text-[15px] text-text-secondary hover:text-text transition-colors duration-150"
             target="_blank"
             rel="noopener noreferrer"
           >
-            查看完整文档（PDF）→
+            查看完整文档 →
           </a>
         </p>
       </div>
