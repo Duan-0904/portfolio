@@ -7,7 +7,7 @@ export const heroData = {
   name: "段韬",
   title: "产品实习生申请",
   description:
-    "数据驱动、有产品思维的实践者。为 2000+ 中小融媒设计增长飞轮，用 AI 重构求职匹配体验。",
+    "从学术研究到产品实践：将调研方法论转化为 2000+ 中小融媒的增长飞轮，用 AI 语义理解重构求职匹配体验。",
 };
 
 export const navbarData = {
