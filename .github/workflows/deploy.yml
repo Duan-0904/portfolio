@@ -43,8 +43,12 @@ jobs:
       - name: Build
         run: npm run build
         working-directory: portfolio
-        env:
-          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages_config.outputs.base_path }}
+
+      - name: Fix paths for GitHub Pages subpath
+        if: steps.pages_config.outputs.base_path != ''
+        run: |
+          echo "Fixing paths with base_path: ${{ steps.pages_config.outputs.base_path }}"
+          find portfolio/out -type f \( -name "*.html" -o -name "*.js" \) -exec sed -i "s|/pdf/|${{ steps.pages_config.outputs.base_path }}/pdf/|g" {} +
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -7,8 +7,6 @@ type Project = (typeof projects)[number];
 // ============================================================
 
 export default function ProjectCard({ project }: { project: Project }) {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
   return (
     <section id={project.id}>
       {/* ========== 速览版（默认可见） ========== */}
@@ -71,8 +69,8 @@ export default function ProjectCard({ project }: { project: Project }) {
           <a
             href={
               project.id === "zhongxiaorongmei"
-                ? `${basePath}/pdf/中小融媒内容运营体系.pdf`
-                : `${basePath}/pdf/简程AI.pdf`
+                ? "/pdf/中小融媒内容运营体系.pdf"
+                : "/pdf/简程AI.pdf"
             }
             className="inline-flex items-center gap-1 text-[15px] text-text-secondary hover:text-text transition-colors duration-150"
             download
